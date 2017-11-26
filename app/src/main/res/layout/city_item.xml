@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cityItemView"
+    style="@style/CityObjectStyle">
+    <ImageView
+        android:id="@+id/cityImage"
+        style="@style/CityImageStyle"
+        tools:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/cityName"
+        tools:text="Place Holder"
+        tools:textStyle="bold"
+        style="@style/CityNameStyle" />
+</RelativeLayout>

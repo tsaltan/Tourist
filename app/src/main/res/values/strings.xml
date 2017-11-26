@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tourist</string>
+    <string name="cityOne">Paris</string>
+    <string name="cityTwo">Berlin</string>
+    <string name="cityThree">Barcelona</string>
+    <string name="cityFour">Prague</string>
+    <string name="cityFive">Lisbon</string>
+    <string name="citySix">London</string>
+    <string name="citySeven">Rome</string>
+    <string name="cityEight">Amsterdam</string>
+</resources>
