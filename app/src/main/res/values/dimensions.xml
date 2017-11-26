@@ -1,9 +1,5 @@
 <resources>
     <!-- Height of each list item -->
-    <dimen name="grid_item_height">120dp</dimen>
-    <dimen name="grid_item_width">150dp</dimen>
+    <dimen name="grid_item_height">220dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
-
-    <dimen name="city_image_height">130dp</dimen>
-    <dimen name="city_image_width">150dp</dimen>
 </resources>

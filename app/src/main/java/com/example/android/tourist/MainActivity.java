@@ -3,6 +3,7 @@ package com.example.android.tourist;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.GridView;
+import android.widget.ListView;
 
 import org.w3c.dom.Text;
 
@@ -35,8 +36,9 @@ public class MainActivity extends AppCompatActivity {
          */
         final CityAdapter arrayAdapter = new CityAdapter(this, countryList);
 
-        GridView citysGridyView = findViewById(R.id.cityGridView);
-        citysGridyView.setAdapter(arrayAdapter);
+        ListView citysListView = findViewById(R.id.cityGridView);
+//        GridView citysGridyView = findViewById(R.id.cityGridView);
+        citysListView.setAdapter(arrayAdapter);
 
     }
 }

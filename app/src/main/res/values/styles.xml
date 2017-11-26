@@ -27,18 +27,13 @@
 
     <style name="CityImageStyle">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/city_image_height</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
 
-    <style name="gridViewStyle">
+    <style name="listViewStyle">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:numColumns">2</item>
-        <item name="android:horizontalSpacing">1dp</item>
-        <item name="android:verticalSpacing">1dp</item>
-        <item name="android:stretchMode">columnWidth</item>
-        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 </resources>
 

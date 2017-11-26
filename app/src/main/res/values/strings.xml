@@ -8,4 +8,7 @@
     <string name="citySix">London</string>
     <string name="citySeven">Rome</string>
     <string name="cityEight">Amsterdam</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
