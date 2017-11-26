@@ -32,6 +32,7 @@ public class CityAdapter extends ArrayAdapter<City> {
         check if the view is empty, use if it is
          */
         View cityItemView = convertView;
+
         if(cityItemView == null) {
             cityItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.city_item, parent, false);

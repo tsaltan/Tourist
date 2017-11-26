@@ -8,4 +8,9 @@
     <string name="citySix">London</string>
     <string name="citySeven">Rome</string>
     <string name="cityEight">Amsterdam</string>
+
+
+    <string name="category_see">See</string>
+    <string name="category_food">Eat</string>
+    <string name="category_drink">Drink</string>
 </resources>

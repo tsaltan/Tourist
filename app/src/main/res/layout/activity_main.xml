@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/cityGridView"
-    style="@style/gridViewStyle"
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cityListView"
+    style="@style/listViewStyle"
     >
-</GridView>
+</ListView>
