@@ -1,7 +1,10 @@
 package com.example.android.tourist;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListView;
 
@@ -39,5 +42,19 @@ public class MainActivity extends AppCompatActivity {
         ListView citysListView = findViewById(R.id.cityGridView);
         citysListView.setAdapter(arrayAdapter);
 
+        citysListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                startActive(SecondActivity.class);
+
+            }
+        });
+
+    }
+
+
+    public void startActive(Class activity){
+        startActivity(new Intent(this, activity));
     }
 }
