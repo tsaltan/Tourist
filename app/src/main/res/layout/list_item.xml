@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listItem"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    >
+    <ImageView
+        android:id="@+id/listImageView"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        tools:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/listImageView"
+        android:gravity="left"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/listImageView">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:id="@+id/attractionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Placeholder Namee"
+            tools:textStyle="bold"
+            tools:textColor="@color/textPrimary"
+            tools:textSize="20sp"
+            android:maxWidth="180dp"
+            />
+
+        <TextView
+            android:id="@+id/attractionNam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/attractionName"
+            android:layout_marginLeft="200dp"
+            android:layout_marginStart="200dp"
+            tools:text="4.6"
+            tools:textStyle="bold"
+            tools:textColor="@color/textSecondary"
+            tools:textSize="20sp"/>
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/attractionInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="left"
+            tools:text="ads asdasdads asldkmad sa dansdalndasd alksnda dslka asdkjansd aksjdnadajnasd "
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/attractionDistanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            tools:text="Only 25.3 km far away"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
