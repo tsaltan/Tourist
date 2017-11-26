@@ -31,7 +31,7 @@ public class AttractionAdapter extends ArrayAdapter<Attraction>{
 
         if(itemView == null) {
             itemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.city_item, parent, false);
+                    R.layout.list_item, parent, false);
         }
 
         //Get the current attraction. ? how does this work @tilbe

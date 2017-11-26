@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
          */
         final CityAdapter arrayAdapter = new CityAdapter(this, countryList);
 
-        ListView citysListView = findViewById(R.id.cityGridView);
+        ListView citysListView = (ListView) findViewById(R.id.cityListView);
         citysListView.setAdapter(arrayAdapter);
 
         citysListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

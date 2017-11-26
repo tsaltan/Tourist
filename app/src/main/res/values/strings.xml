@@ -9,6 +9,8 @@
     <string name="citySeven">Rome</string>
     <string name="cityEight">Amsterdam</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="category_see">See</string>
+    <string name="category_food">Eat</string>
+    <string name="category_drink">Drink</string>
 </resources>

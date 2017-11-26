@@ -35,9 +35,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="Placeholder Namee"
-            tools:textStyle="bold"
-            tools:textColor="@color/textPrimary"
-            tools:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp"
             android:maxWidth="180dp"
             />
 
@@ -46,12 +46,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/attractionName"
-            android:layout_marginLeft="200dp"
-            android:layout_marginStart="200dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginStart="190dp"
             tools:text="4.6"
-            tools:textStyle="bold"
-            tools:textColor="@color/textSecondary"
-            tools:textSize="20sp"/>
+            android:textStyle="bold"
+            android:textColor="@color/textSecondary"
+            android:textSize="20sp"/>
     </RelativeLayout>
 
         <TextView
@@ -69,7 +69,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_gravity="left"
+            android:layout_gravity="bottom"
+            android:gravity="left"
             tools:text="Only 25.3 km far away"
             android:layout_marginStart="10dp" />
 
