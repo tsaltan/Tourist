@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static String clickedCountry;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         /*
          * City arraylist and adding items
          */
-        final ArrayList<City> countryList = new ArrayList<City>();
+         final ArrayList<City> countryList = new ArrayList<>();
 
         countryList.add(new City(getString(R.string.cityOne), R.drawable.paris));
         countryList.add(new City(getString(R.string.cityTwo), R.drawable.berlin));
@@ -39,12 +40,14 @@ public class MainActivity extends AppCompatActivity {
          */
         final CityAdapter arrayAdapter = new CityAdapter(this, countryList);
 
-        ListView citysListView = (ListView) findViewById(R.id.cityListView);
+        final ListView citysListView = (ListView) findViewById(R.id.cityListView);
         citysListView.setAdapter(arrayAdapter);
 
         citysListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                City city = countryList.get(position);
+                clickedCountry= city.getName();
 
                 startActive(SecondActivity.class);
 
