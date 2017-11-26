@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*
+         * City arraylist and adding items
+         */
         final ArrayList<City> countryList = new ArrayList<City>();
 
         countryList.add(new City(getString(R.string.cityOne), R.drawable.paris));
@@ -27,11 +30,12 @@ public class MainActivity extends AppCompatActivity {
         countryList.add(new City(getString(R.string.cityEight), R.drawable.amsterdam));
 
 
-
+        /*
+         * Initialising the custom adapter, and setting the addapter to the gridview
+         */
         final CityAdapter arrayAdapter = new CityAdapter(this, countryList);
 
         GridView citysGridyView = findViewById(R.id.cityGridView);
-
         citysGridyView.setAdapter(arrayAdapter);
 
     }

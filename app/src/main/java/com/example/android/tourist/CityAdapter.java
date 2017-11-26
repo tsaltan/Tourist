@@ -43,7 +43,7 @@ public class CityAdapter extends ArrayAdapter<City> {
         // setting the textview
         TextView cityName = cityItemView.findViewById(R.id.cityName);
         cityName.setText(currentCity.getName());
-        cityName.getBackground().setAlpha(650);
+        cityName.getBackground().setAlpha(650); // alpha for readability of the text
 
         // setting the imageView
         ImageView cityImage = cityItemView.findViewById(R.id.cityImage);
