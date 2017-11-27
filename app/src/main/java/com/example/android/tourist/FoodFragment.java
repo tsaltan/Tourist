@@ -1,6 +1,7 @@
 package com.example.android.tourist;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,18 +9,19 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import org.w3c.dom.Attr;
 
 import java.util.ArrayList;
 
 
 public class FoodFragment extends Fragment {
 
-    public FoodFragment() {
-        // Required empty public constructor
-    }
+     ArrayList<Attraction> attractions;
 
 
     @Override
@@ -27,7 +29,7 @@ public class FoodFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list, container, false);
 
-        final ArrayList<Attraction> attractions = new ArrayList<>();
+       attractions = new ArrayList<>();
 
 
         switch (MainActivity.clickedCountry){
@@ -94,7 +96,17 @@ public class FoodFragment extends Fragment {
 
         listView.setAdapter(adapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                attractions.get(position);
+                startActivity(new Intent(getActivity(), DetailActivity.class));
+            }
+        });
 
         return rootView;
     }
+
+
+
 }
