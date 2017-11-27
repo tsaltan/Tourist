@@ -19,7 +19,11 @@
         </activity>
         <activity
             android:name=".SecondActivity"
-            android:parentActivityName="com.example.android.tourist.MainActivity"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".DetailActivity"
+            android:parentActivityName=".SecondActivity"
             tools:targetApi="jelly_bean" />
     </application>
 
